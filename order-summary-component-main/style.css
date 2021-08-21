@@ -1,0 +1,53 @@
+:root {
+  /*Primary Colors*/
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /*Neutral Colors*/
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background: url('images/pattern-background-desktop.svg') var(--dark-blue)
+    no-repeat;
+  width: 375px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-summary-component {
+  border-radius: 20px;
+  width: 340px;
+  background: #fff;
+  height: 80vh;
+}
+
+.hero-div {
+  width: 340px;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
