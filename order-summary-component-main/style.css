@@ -22,32 +22,110 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
-  background: url('images/pattern-background-desktop.svg') var(--dark-blue)
+  background: url('images/pattern-background-desktop.svg') var(--pale-blue)
     no-repeat;
   width: 375px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .order-summary-component {
   border-radius: 20px;
   width: 340px;
   background: #fff;
-  height: 80vh;
+  height: 575px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-div {
-  width: 340px;
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-}
-
-.hero-img {
-  height: 100%;
+.hero-image {
   width: 100%;
   object-fit: contain;
+}
+
+.component-text {
+  margin: 1.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.component-text h3 {
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+  font-weight: var(--fw-900);
+}
+
+.component-text p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: var(--desaturated-blue);
+  width: 80%;
+}
+
+.selected-plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  background: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+}
+
+.cluster {
+  display: flex;
+}
+
+.cluster img {
+  margin-right: 1.25rem;
+}
+
+.plan-title-price h4 {
+ font-weight: var(--fw-700);
+ margin-bottom: .2rem;
+}
+
+.plan-title-price span {
+  color: var(--desaturated-blue);
+}
+
+.selected-plan a {
+ font-weight: var(--fw-700);
+font-size: 14px;
+}
+
+.buttons {
+display: flex;
+flex-direction: column;
+width: 90%;
+}
+
+.primary {
+  background: var(--bright-blue);
+  border: 0;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: var(--fw-900);
+  font-size: 16px;
+  box-shadow: 0px 6px 10px -5px #000000;
+}
+
+.secondary {
+  margin-top: 0.75rem;
+  background: #fff;
+  color: rgb(117, 117, 117);
+  box-shadow: none;
+  font-weight: var(--fw-700);
+
 }
